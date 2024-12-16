@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #7c7c7c, #292929);
+    
+    }
+
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+  
+}
+
+
+.logo-container {
+    display: flex;            /* Asegura que el logo esté centrado dentro del círculo */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    width: 60px;              /* Ancho del círculo */
+    height: 40px;             /* Alto del círculo, igual que el ancho */
+    border-radius: 10%;       /* Hace el contenedor circular */
+    background-color: #f0f0f0; /* Fondo del contenedor (puedes personalizar el color) */
+    overflow: hidden;         /* Asegura que el logo no se salga del contenedor */
+    border: 2px solid #000000; /* Opcional: borde del círculo */
+  }
+  
+  /* Estilo del logo dentro del círculo */
+  .logo-container img {
+    width: 100%;               /* Ajusta el tamaño del logo dentro del círculo */
+    height: auto;             /* Mantiene las proporciones del logo */
+  }
+
+header ul{
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    margin: 0%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #1f1f1f, #000000); 
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #000000,#1f1f1f );
+    
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(135deg, #1f1f1f, #000000); 
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, #000000,#1f1f1f);
+  }
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    color: #000000;
+}
+
+.hero p {
+    color: #7c7c7c;
+}
+
+.hero button {
+    background: linear-gradient(135deg, #1f1f1f, #000000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero button:hover {
+    background: linear-gradient(135deg, #000000,#1f1f1f);
+  }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.product p {
+    color: #7c7c7c;
+    margin: 10px 0;
+}
+
+.product button {
+    background: linear-gradient(135deg, #1f1f1f, #000000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background: linear-gradient(135deg, #000000,#1f1f1f);
+  }
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
