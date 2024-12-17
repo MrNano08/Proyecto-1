@@ -1,76 +1,70 @@
 body {
+    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(135deg, #7c7c7c, #292929);
-    
-    }
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 header {
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 10px 10px;
-  
+    width: 100%;
 }
 
+nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
 
 .logo-container {
-    display: flex;            /* Asegura que el logo esté centrado dentro del círculo */
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;      /* Centra verticalmente */
-    width: 60px;              /* Ancho del círculo */
-    height: 40px;             /* Alto del círculo, igual que el ancho */
-    border-radius: 10%;       /* Hace el contenedor circular */
-    background-color: #f0f0f0; /* Fondo del contenedor (puedes personalizar el color) */
-    overflow: hidden;         /* Asegura que el logo no se salga del contenedor */
-    border: 2px solid #000000; /* Opcional: borde del círculo */
-  }
-  
-  /* Estilo del logo dentro del círculo */
-  .logo-container img {
-    width: 100%;               /* Ajusta el tamaño del logo dentro del círculo */
-    height: auto;             /* Mantiene las proporciones del logo */
-  }
-
-header ul{
-    list-style-type: none;
+    display: flex;
+    /* Asegura que el logo esté centrado dentro del círculo */
+    /* Centra horizontalmente */
     align-items: center;
-    gap: 10px;
+    /* Centra verticalmente */
+    width: 80px;
+    /* Ancho del círculo */
+    height: 80px;
+    /* Alto del círculo, igual que el ancho */
+    border-radius: 50%;
+    /* Hace el contenedor circular */
+    background-color: #f0f0f0;
+    /* Fondo del contenedor (puedes personalizar el color) */
+    overflow: hidden;
+    /* Asegura que el logo no se salga del contenedor */
+    border: 2px solid #000000;
+    /* Opcional: borde del círculo */
 }
 
-.btn {
-    margin: 0%;
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary {
-    background: linear-gradient(135deg, #1f1f1f, #000000); 
-    color: white;
-  }
-  
-  .btn-primary:hover {
-    background: linear-gradient(135deg, #000000,#1f1f1f );
-    
-  }
-  
-  .btn-secondary {
-    background: linear-gradient(135deg, #1f1f1f, #000000); 
-    color: white;
-  }
-  
-  .btn-secondary:hover {
-    background: linear-gradient(135deg, #000000,#1f1f1f);
-  }
+/* Estilo del logo dentro del círculo */
+.logo-container img {
+    width: 100%;
+    /* Ajusta el tamaño del logo dentro del círculo */
+    height: auto;
+    /* Mantiene las proporciones del logo */
+}
 
-
-nav ul {
+nav button {
     display: flex;
-    justify-content: flex-end;
-    margin: 0%;
-    padding: 0%;
+    margin: 0.5%;
+    align-self: center;
+    background: linear-gradient(135deg, #1f1f1f, #000000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    background: linear-gradient(135deg, #000000, #1f1f1f);
 }
 
 .container {
@@ -107,8 +101,8 @@ nav ul {
 }
 
 .hero button:hover {
-    background: linear-gradient(135deg, #000000,#1f1f1f);
-  }
+    background: linear-gradient(135deg, #000000, #1f1f1f);
+}
 
 .products {
     display: grid;
@@ -150,9 +144,68 @@ nav ul {
 }
 
 .product button:hover {
-    background: linear-gradient(135deg, #000000,#1f1f1f);
-  }
+    background: linear-gradient(135deg, #000000, #1f1f1f);
+}
 
+.login {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    justify-self: center;
+    margin: 13.5%;
+}
+
+.login-icon-container {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    border: 2px solid #000000;
+}
+
+
+.login-icon-container img {
+    width: 100%;
+    height: auto;
+}
+
+.login button {
+    background: linear-gradient(135deg, #1f1f1f, #000000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.login .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0px;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    border-radius: 5px;
+}
 
 footer {
     text-align: center;
@@ -160,6 +213,7 @@ footer {
     background-color: white;
     color: rgb(0, 0, 0);
     margin-top: 20px;
+    width: 100%;
 }
 
 footer p {
