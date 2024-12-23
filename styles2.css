@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(35, 35, 37);
+  height: 90vh;
+  margin: 0%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 15% 10%;
+  grid-template-areas:
+    "header "
+    "content"
+    "footer";
+}
+
+.header {
+  display: flex;
+  grid-area: header;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  justify-content: center;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  width: 99%;
+  height: 99%;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 4%;
+  height: 95%;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+
+  overflow: hidden;
+
+  border: 2px solid #000000;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+.logo-container + nav button {
+  padding: 100px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+nav button {
+  display: flex;
+  margin: 0.5%;
+  align-self: center;
+  background: linear-gradient(135deg, #1f1f1f, #000000);
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+nav button:hover {
+  background: linear-gradient(135deg, #000000, #1f1f1f);
+}
+
+.content {
+  grid-area: content;
+  color: whitesmoke;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  justify-self: center;
+  margin: 13.5%;
+}
+
+.login-icon-container {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  border: 2px solid #000000;
+}
+
+.login-icon-container img {
+  width: 100%;
+  height: auto;
+}
+
+.login button {
+  background: linear-gradient(135deg, #1f1f1f, #000000);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  accent-color: black;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  border-radius: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: whitesmoke;
+  color: whitesmoke;
+}

@@ -4,41 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Acceder</title>
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <a href="/" class="logo-container">
-                <img src="assets\images\Logo.png" alt="Logo de la página" />
-            </a>
-        </nav>
-    </header>
-
-    <section class="login">
-        <form action="" class="login">
-            <div class="container">
-                <div class="login-icon-container">
-                    <img src="assets\images\login-icon.png" alt="login icon" />
+    <main>
+        <header class="header">
+            <nav>
+                <div class="logo">
+                    <a href="/" class="logo-container">
+                        <img src="assets\icons\Logo.png" alt="Logo de la página" />
+                    </a>
                 </div>
-                <label for="uname"><b>Nombre</b></label>
-                <input type="text" placeholder="Nombre de usuario" name="uname" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Contraseña" name="psw" required>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Recuérdame
-                </label>
-                <button>Iniciar sesión</button>
-            </div>
-        </form>
-    </section>
+            </nav>
+        </header>
 
-    <footer>
-        <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
-    </footer>
+        <section class="login">
+            <form action="" class="login">
+                <div class="container">
+                    <div class="login-icon-container">
+                        <img src="assets\images\login-icon.png" alt="login icon" />
+                    </div>
+                    <label for="uname"><b>Nombre</b></label>
+                    <input type="text" placeholder="Nombre de usuario" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                    </label>
+                    <button>Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+        </footer>
+    </main>
 </body>
-
 </html>
